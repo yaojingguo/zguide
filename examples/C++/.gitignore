@@ -48,3 +48,6 @@ version
 wuclient
 wuproxy
 wuserver
+hwserver
+hwclient
+message_usage
