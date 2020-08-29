@@ -26,7 +26,8 @@ int main ()
         //  Get the reply.
         zmq::message_t reply;
         socket.recv (&reply);
-        std::cout << "Received World " << request_nbr << std::endl;
+
+        std::cout << "Received message " << request_nbr << ": " << reply.to_string() << std::endl;
     }
     return 0;
 }

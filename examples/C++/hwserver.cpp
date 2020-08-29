@@ -25,7 +25,7 @@ int main () {
 
         //  Wait for next request from client
         socket.recv (&request);
-        std::cout << "Received Hello" << std::endl;
+        std::cout << "Received message: " << request.to_string() << std::endl;
 
         //  Do some 'work'
     	sleep(1);
